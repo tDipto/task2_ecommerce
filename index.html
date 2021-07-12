@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <!--  navbar -->
+      <section class="header">
+        <nav class="navbar navbar-expand navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href=""
+              ><img
+                src="./img/logo.jpg"
+                style="max-width: 20%; height: auto"
+                alt=""
+            /></a>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i> </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active mx-1" href="#"
+                  ><i class="fas fa-shopping-bag"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+      <!--  product-pic -->
+
+      <a href="#product" id="photo"></a>
+
+      <!--  product-head -->
+      <section class="main2" id="product">
+        <div class="product"></div>
+        <div class="product-text"><h1>Products</h1></div>
+      </section>
+
+      <!--     product list -->
+      <section class="product-list mt-5 mb-5">
+        <div class="container p-3 bg-blur">
+          <div class="row">
+            <!-- product 1 -->
+            <div class="col-lg-6 col-sm-12 mb-3 mt-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Plum Embroidered Viscose-Cotton Panjabi</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="./img/p1.jpg" /></div>
+                    <div class="col-6 mt-3">
+                      <div class="buynow mb-3">
+                        <div class="btn">
+                          <button class="border-0" type="button">
+                            <a
+                              class="btn btn-outline-danger"
+                              href="#payment"
+                              onclick="buyNow();return false"
+                              >BUY NOW</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-cart ml-3">
+                        <button
+                          class="btn btn-primary"
+                          onclick="count_open(this.id)"
+                          id="prodcutno1"
+                        >
+                          ADD CART
+                        </button>
+                      </div>
+                      <div class="cartindex cart-open" id="cart-open1">
+                        <ul class="pagination">
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="deCrement('no-of-product1')"
+                          >
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="page-link cart-num"
+                            value="1"
+                            id="no-of-product1"
+                            alt="1350"
+                          />
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="inCrement('no-of-product1')"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </ul>
+                      </div>
+
+                      <div class="price mt-4 ml-1">
+                        <h4>Price : 1350 tk</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  product 2 -->
+            <div class="col-lg-6 col-sm-12 mb-3 mt-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Grey Embroidered Cotton Slim Fit Panjabi</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="./img/p2.jpg" /></div>
+                    <div class="col-6 mt-3">
+                      <div class="buynow mb-3">
+                        <div class="btn">
+                          <button class="border-0" type="button">
+                            <a
+                              class="btn btn-outline-danger"
+                              href="#payment"
+                              onclick="buyNow();return false"
+                              >BUY NOW</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-cart ml-3">
+                        <button
+                          class="btn btn-primary"
+                          onclick="count_open(this.id)"
+                          id="prodcutno2"
+                        >
+                          ADD CART
+                        </button>
+                      </div>
+                      <div class="cartindex cart-open" id="cart-open2">
+                        <ul class="pagination">
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="deCrement('no-of-product2')"
+                          >
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="page-link cart-num"
+                            value="1"
+                            id="no-of-product2"
+                            alt="1100"
+                          />
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="inCrement('no-of-product2')"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </ul>
+                      </div>
+
+                      <div class="price mt-4 ml-1">
+                        <h4>Price : 1100 tk</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  product 3 -->
+            <div class="col-lg-6 col-sm-12 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Lemon Green Erri Embroidered Cotton Panjabi</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="./img/p3.jpg" /></div>
+                    <div class="col-6 mt-3">
+                      <div class="mb-3 buynow">
+                        <div class="btn">
+                          <button class="border-0" type="button">
+                            <a
+                              class="btn btn-outline-danger"
+                              href="#payment"
+                              onclick="buyNow();return false"
+                              >BUY NOW</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-cart ml-3">
+                        <button
+                          class="btn btn-primary"
+                          onclick="count_open(this.id)"
+                          id="prodcutno3"
+                        >
+                          ADD CART
+                        </button>
+                      </div>
+                      <div class="cartindex cart-open" id="cart-open3">
+                        <ul class="pagination">
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="deCrement('no-of-product3')"
+                          >
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="page-link cart-num"
+                            value="1"
+                            id="no-of-product3"
+                            alt="1500"
+                          />
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="inCrement('no-of-product3')"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </ul>
+                      </div>
+
+                      <div class="price mt-4 ml-1">
+                        <h4>Price : 1500 tk</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product 4 -->
+            <div class="col-lg-6 col-sm-12 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Light Yellow Embroidered Viscose-Cotton Panjabi</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="./img/p4.jpg" /></div>
+                    <div class="col-6 mt-3">
+                      <div class="mb-3 buynow">
+                        <div class="btn">
+                          <button class="border-0" type="button">
+                            <a
+                              class="btn btn-outline-danger"
+                              href="#payment"
+                              onclick="buyNow();return false"
+                              >BUY NOW</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-cart ml-3">
+                        <button
+                          class="btn btn-primary"
+                          onclick="count_open(this.id)"
+                          id="prodcutno4"
+                        >
+                          ADD CART
+                        </button>
+                      </div>
+                      <div class="cartindex cart-open" id="cart-open4">
+                        <ul class="pagination">
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="deCrement('no-of-product4')"
+                          >
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="page-link cart-num"
+                            value="1"
+                            id="no-of-product4"
+                            alt="1200"
+                          />
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="inCrement('no-of-product4')"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </ul>
+                      </div>
+
+                      <div class="price mt-4 ml-1">
+                        <h4>Price : 1200 tk</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--    product 5 -->
+            <div class="col-lg-6 col-sm-12 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Green Duel Tone Handloom Cotton Panjabi</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-6"><img src="./img/p5.jpg" /></div>
+                    <div class="col-6 mt-3">
+                      <div class="mb-3 buynow">
+                        <div class="btn">
+                          <button class="border-0" type="button">
+                            <a
+                              class="btn btn-outline-danger"
+                              href="#payment"
+                              onclick="buyNow();return false"
+                              >BUY NOW</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-cart ml-3">
+                        <button
+                          class="btn btn-primary"
+                          onclick="count_open(this.id)"
+                          id="prodcutno5"
+                        >
+                          ADD CART
+                        </button>
+                      </div>
+                      <div class="cartindex cart-open" id="cart-open5">
+                        <ul class="pagination">
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="deCrement('no-of-product5')"
+                          >
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="page-link cart-num"
+                            value="1"
+                            id="no-of-product5"
+                            alt="1350"
+                          />
+                          <button
+                            class="page-link bg-secondary text-white"
+                            onclick="inCrement('no-of-product5')"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </ul>
+                      </div>
+
+                      <div class="price mt-4 ml-1">
+                        <h4>Price : 1350 tk</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- cart -->
+    <section class="bg2" id="payment" style="display: none">
+      <div class="cart bg-custom py-4 px-5">
+        <form action="">
+          <h3 class="pb-3 font-weight-bold">Shopping List</h3>
+          <div class="title">
+            <div
+              class="title-list d-flex flex-row justify-content-between mb-3"
+            >
+              <div class="product-name"><h4>Name</h4></div>
+              <div class="product-quantity"><h4>Quantity</h4></div>
+              <div class="product-price"><h4>Price</h4></div>
+            </div>
+          </div>
+          <div class="list-shopping">
+            <div class="shopping-items">
+              <ol class="list-of-items" id="cart-products">
+                <!-- <li class="product-1">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div class="product1name">Panjabi</div>
+                    <div class="productquntity pr-4">2</div>
+                    <div class="productprice">1100<span> tk</span></div>
+                  </div>
+                </li>
+                <li class="product-1">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div class="product1name">Panjabi</div>
+                    <div class="productquntity pr-4">2</div>
+                    <div class="productprice">1200<span> tk</span></div>
+                  </div>
+                </li>
+                <li class="product-1">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div class="product1name">Panjabi</div>
+                    <div class="productquntity pr-4">2</div>
+                    <div class="productprice">1300<span> tk</span></div>
+                  </div>
+                </li>
+                <li class="product-1">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div class="product1name">Panjabi</div>
+                    <div class="productquntity pr-4">2</div>
+                    <div class="productprice">1400<span> tk</span></div>
+                  </div>
+                </li> -->
+              </ol>
+              <hr />
+              <div class="total">
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="total-item"><h3>Total</h3></div>
+                  <div class="totalprice" id="totalpricetk">
+                    8000<span> tk</span>
+                  </div>
+                </div>
+              </div>
+              <div class="submit d-flex justify-content-end">
+                <a href="cart.html" class="btn btn-danger">PAY NOW</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- dom -->
+    <script src="index.js"></script>
+
+    <!--   bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
