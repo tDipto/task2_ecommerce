@@ -116,12 +116,14 @@ const createList = (ol) =>{
 function buyNow() {
     if (!cart_arr.length) {
         alert("Please Shop Something")
+        return false;
     } else {
         document.getElementById('payment').style.display = 'block';
         let ol = document.getElementById('cart-products');
         createList(ol);
         console.log(total_price);
         document.getElementById('totalpricetk').innerHTML = `${total_price} tk`;
-        window.open(url)
+       /*  window.open(url) */
+       return true;
     }
 }
