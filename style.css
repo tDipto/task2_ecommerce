@@ -111,4 +111,9 @@
   .cart {
     margin: 25rem 2rem 5rem 2rem;
   }
+
+  .pagination {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
 }
