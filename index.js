@@ -54,6 +54,12 @@ function deCrement(click_id){
         document.getElementById(pid).style.display = 'none';
         document.getElementById(productid).style.display = 'block';
 
+        let index = cart_arr.findIndex(function (value) {
+            return value.name === pid.id;
+        })
+
+        cart_arr.splice(index,1);
+
 
     } else {
         pid.value = parseInt(pid.value) - 1;
