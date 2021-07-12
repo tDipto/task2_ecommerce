@@ -112,6 +112,11 @@
     margin: 25rem 2rem 5rem 2rem;
   }
 
+  .cart-num {
+    width: 35%;
+    text-align: center;
+  }
+
   .pagination {
     font-size: 0.5rem;
     font-weight: bold;
